@@ -12,7 +12,7 @@ Authz is an authorization middleware for [Gin](https://github.com/gin-gonic/gin)
 ## Installation
 
 ```bash
-go get github.com/gin-contrib/authz
+go get github.com/nekitkas/authz
 ```
 
 ## Simple Example
@@ -24,7 +24,7 @@ import (
   "net/http"
 
   "github.com/casbin/casbin/v2"
-  "github.com/gin-contrib/authz"
+  "github.com/nekitkas/authz"
   "github.com/gin-gonic/gin"
 )
 
