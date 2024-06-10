@@ -1,4 +1,4 @@
-module github.com/gin-contrib/authz
+module github.com/nekitkas/authz
 
 go 1.20
 
