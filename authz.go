@@ -51,5 +51,8 @@ func (a *BasicAuthorizer) CheckPermission(r *http.Request) bool {
 
 // RequirePermission returns the 403 Forbidden to the client
 func (a *BasicAuthorizer) RequirePermission(c *gin.Context) {
-	c.AbortWithStatus(http.StatusForbidden)
+	c.AbortWithStatusJSON(http.StatusForbidden, gin.H{
+		"message": "You don't have permission to access this resource",
+		"code":    "FORBIDDEN",
+	})
 }
