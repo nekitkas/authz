@@ -7,6 +7,8 @@ require (
 	github.com/gin-gonic/gin v1.10.0
 )
 
+replace github.com/gin-contrib/authz => github.com/nekitkas/authz v0.0.0-20240610091600-559e4d1d0f9e
+
 require (
 	github.com/bytedance/sonic v1.11.6 // indirect
 	github.com/bytedance/sonic/loader v0.1.1 // indirect
